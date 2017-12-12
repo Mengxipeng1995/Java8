@@ -15,7 +15,7 @@ import java.util.function.Consumer;
  *      语法格式二：有一个参数，无返回值
  *              (x) -> System.out.println(x)
  *              只有一个参数，小括号可以不写
-     *          x -> System.out.println(x);
+ *          x -> System.out.println(x);
  *      语法格式四：有两个以上的参数，有返回值，并且 Lambda 体中有多条语句
  *               Comparator<Integer> i = (x, y) -> {
  *               System.out.println("函数接口");
@@ -55,9 +55,9 @@ public class TestLambda {
     }
     @Test
     public void test3(){
-         Comparator<Integer> i = (x, y) -> {
-             System.out.println("函数接口");
-             return Integer.compare(x, y);
-         };
+        Comparator<Integer> i = (x, y) -> {
+            System.out.println("函数接口");
+            return Integer.compare(x, y);
+        };
     }
 }
